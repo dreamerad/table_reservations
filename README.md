@@ -8,7 +8,7 @@
 
 1. Клонируйте репозиторий
 ```bash
-git clone https://github.com/your-repo/restaurant-reservation.git
+git clone https://github.com/dreamerad/table_reservations.git
 cd restaurant-reservation
 ```
 
@@ -17,14 +17,15 @@ cd restaurant-reservation
 docker-compose up --build
 ```
 
-## Полезные команды
-
-- Создать миграцию: `docker-compose exec backend ./create_migration.sh "migration_name"`
-
 ## Документация API
 После запуска документация доступна по адресу:
 - Swagger UI: `http://localhost:8000/docs`
 - ReDoc: `http://localhost:8000/redoc`
+
+## Unit тесты
+Для тестирования продукта необходимо заустить тесты в окружении:
+docker exec -it backend bash
+python3 -m pytest app/tests
 
 ## Структура проекта
 - `app/` - Основной код приложения
