@@ -24,8 +24,10 @@ docker-compose up --build
 
 ## Unit тесты
 Для тестирования продукта необходимо заустить тесты в окружении:
+```bash
 docker exec -it backend bash
 python3 -m pytest app/tests
+```
 
 ## Структура проекта
 - `app/` - Основной код приложения
