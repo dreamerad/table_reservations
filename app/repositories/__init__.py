@@ -1,0 +1,2 @@
+from app.repositories.table import TableRepository
+from app.repositories.reservation import ReservationRepository
